@@ -1,0 +1,76 @@
+[
+  {
+    "usuario": "¿Cuántos pedidos tuvo el cliente 102 y cuál fue el total?",
+    "thread_id": "sesion-demo-1"
+  },
+  {
+    "tipo": "human",
+    "contenido": "¿Cuántos pedidos tuvo el cliente 102 y cuál fue el total?"
+  },
+  {
+    "tipo": "ai",
+    "contenido": [],
+    "tool_calls": [
+      {
+        "nombre": "buscar_pedidos",
+        "args": {
+          "cliente_id": 102
+        }
+      }
+    ]
+  },
+  {
+    "tipo": "tool",
+    "contenido": "{\"pedidos\": 3, \"total\": 14500}",
+    "herramienta": "buscar_pedidos"
+  },
+  {
+    "tipo": "ai",
+    "contenido": [
+      {
+        "type": "text",
+        "text": "El cliente 102 tuvo un total de **3 pedidos** con un monto total gastado de **$14.500**.",
+        "extras": {
+          "signature": "EuIBCt8BAWkUfRP2I8+eUiQ2vDdE9fjERRsoenzpmOEpXstQD9qotbECjztOeo1Nak9JO7KfGRIWH+tBvNouBZlwCbAiMfgMNz+c0xtc/awrscxghHXpeIidViHp6XG0gNpXerw8Thy6GvFv/6ZZTwp+YXS5UIKqAaRiOhx6IGIzMC8decN6SKeNVYBqmErW16w990tr0jLGbTyzizV257friSG1speeVkvGf5hiTxJw/j76kWP/0l7QjaM2CFYUPSo3Dn1jWT1qC7hE9TjCFMmTHa2vYh6M1eFaNejRRcNI3JV3cw=="
+        }
+      }
+    ]
+  },
+  {
+    "usuario": "¿y el último?",
+    "thread_id": "sesion-demo-1"
+  },
+  {
+    "tipo": "human",
+    "contenido": "¿y el último?"
+  },
+  {
+    "tipo": "ai",
+    "contenido": [],
+    "tool_calls": [
+      {
+        "nombre": "obtener_ultimo_pedido",
+        "args": {
+          "cliente_id": 102
+        }
+      }
+    ]
+  },
+  {
+    "tipo": "tool",
+    "contenido": "{\"id\": \"P-7781\", \"fecha\": \"2026-09-14\", \"monto\": 4300}",
+    "herramienta": "obtener_ultimo_pedido"
+  },
+  {
+    "tipo": "ai",
+    "contenido": [
+      {
+        "type": "text",
+        "text": "El último pedido del cliente 102 fue el **ID P-7781**, realizado el **14 de septiembre de 2026** por un monto de **$4.300**.",
+        "extras": {
+          "signature": "Ev4BCvsBAWkUfRN2v6UJ7cqCNlYqlV7VNm8OAsWKINloy2I2z2IyVvZc3lUPR4aC+O6Vacb4/zi3VOBUH3P/U+F21jElZeM4AanYSPQY5J0jMEEjjQ5TxtG8xUswYletzA2n26jUsohg3pWxEH3vZ6T1bTpsJdFCiEbvv8lgrC+P4jFluAOmK/gYyigahZqmIhPQpSkVGWZc8tNa7VKOE8T8WYdDfH9z+c9NV55iPj71HaotsdCG17fo5uOkgyOj69y3YYVlR5jjYRwjkbmtcO/YsMCDY5foSvEnaF630MBXwKIBXOfVQ8peda2ZuDNG+ch/bGr4R4Z5+2Xrlc0HpI0="
+        }
+      }
+    ]
+  }
+]

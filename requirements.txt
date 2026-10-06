@@ -1,0 +1,5 @@
+langgraph>=0.2
+langchain-core
+langchain-google-genai
+langgraph-checkpoint-sqlite
+python-dotenv
